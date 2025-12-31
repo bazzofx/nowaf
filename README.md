@@ -11,17 +11,6 @@ Once the WAF reaches its processing limit, the remaining content in the request 
 nowaf is a simple tool designed to help test this behavior. It appends a configurable amount of data to any raw HTTP request, allowing you to observe how a server or security appliance handles oversized bodies. You can choose from predefined size presets or specify a custom body size to match your testing needs.
 
 
-🔧 Features
-
-✔ Append large JSON bodies to any raw HTTP request
-✔ Fill the body with "a" characters (default) or randomized characters (--obfuscate)
-✔ WAF size presets for quick server‑testing (--waf <name>)
-✔ Custom body size (--size <bytes>)
-✔ Size multiplier (--junk-multiplier <n> → n × 1024 bytes)
-✔ Randomized JSON keys
-✔ List all available WAF size presets (--list-wafs)
-✔ Works with files or inline input
-
 # 📦 Installation
 
 ```
