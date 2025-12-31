@@ -1,4 +1,4 @@
-# NOWAFPLZ
+# NOWAF
 This tool is a conversion of infosec-au from [BurpSuite Extension](https://github.com/assetnote/nowafpls) to a stand alone tool.
 
 It plays with the idea that WAFs will not monitor payloads if they are a certain size, this is to avoid high resource consumption, so what do we do? 
