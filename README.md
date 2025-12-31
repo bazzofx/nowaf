@@ -27,6 +27,21 @@ python nowaf.py $payload
 - --obfuscate	Use random characters instead of "a"
 - -h, --help	Show help message
 
+# Documented WAF Limitations
+|WAF Provider	| Maximum Request Body Inspection Size Limit|
+|-------------|--------------------------------------------|
+|Cloudflare	| 128 KB for ruleset engine, up to 500 MB for enterprise|
+|AWS WAF	| 8 KB - 64 KB (configurable depending on service)|
+|Akamai |	8 KB - 128 KB|
+|Azure WAF	|128 KB|
+|Fortiweb by Fortinet	|100 MB |
+|Barracuda WAF |	64 KB |
+|Sucuri	|10 MB |
+|Radware AppWall	| up to 1 GB for cloud WAF |
+|F5 BIG-IP WAAP	| 20 MB (configurable) | 
+|Palo Alto |	10 MB | 
+|Cloud Armor by Google	| 8 KB (can be increased to 128 KB) |
+
 # 🚀 Usage
 Basic example
 
