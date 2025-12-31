@@ -11,13 +11,6 @@ Once the WAF reaches its processing limit, the remaining content in the request 
 nowaf is a simple tool designed to help test this behavior. It appends a configurable amount of data to any raw HTTP request, allowing you to observe how a server or security appliance handles oversized bodies. You can choose from predefined size presets or specify a custom body size to match your testing needs.
 
 
-# 📦 Installation
-
-```
-git clone https://github.com/yourname/nowaf.git
-cd nowaf
-python nowaf.py $payload
-```
 
 # 🧩 Flags Summary
 - --size <bytes>	Custom body size
@@ -49,7 +42,7 @@ Basic example
 ```
 python nowaf.py request.txt
 or
-python nowwaf.py $payload.txt
+python nowwaf.py $payload
 ```
 
 ### Use a WAF size preset
@@ -78,7 +71,7 @@ python nowaf.py request.txt --size 30000 --obfuscate
 ```
 
 ## 📄 Example Payload before:
-It needs to be the full HTML request
+Your payload needs to be the full HTML request, like the below example
 ```
 GET /static/js/main.22728e1f.js HTTP/2
 Host: lab-1767130908957-1api91.labs-app.bugforge.io
